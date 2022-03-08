@@ -1,0 +1,19 @@
+{
+  "name": "react-cli",
+  "version": "1.0.0",
+  "description": "一个创建react项目的脚手架模板",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "yzw",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^4.1.1",
+    "co": "^4.6.0",
+    "commander": "^7.2.0",
+    "figlet": "^1.5.0",
+    "gradient-string": "^1.2.0",
+    "inquirer": "^8.1.0"
+  }
+}
