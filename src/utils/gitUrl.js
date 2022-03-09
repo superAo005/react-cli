@@ -1,10 +1,10 @@
 /**
- * @Author zhiyuan.xu
- * @Date 2021/3/29
+ * @Author superAo
+ * @Date 2022/3/9
  * @Version 1.0.0
- * @Last Modified by zhiyuan.xu
- * @Last Modified Time 2021/3/29
+ * @Last Modified by superAo
+ * @Last Modified Time 2022/3/9
  */
-const gitUrl = 'http://git.dev.sh.ctripcorp.com/mcjs/Nfes-boilerplate.git';
+const gitUrl = 'https://github.com/superAo005/react-cli'
 
-module.exports = gitUrl;
+module.exports = gitUrl

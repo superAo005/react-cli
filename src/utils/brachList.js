@@ -1,9 +1,9 @@
 /**
- * @Author zhiyuan.xu
- * @Date 2021/3/29
+ * @Author superAo
+ * @Date 2022/3/9
  * @Version 1.0.0
- * @Last Modified by zhiyuan.xu
- * @Last Modified Time 2021/3/29
+ * @Last Modified by superAo
+ * @Last Modified Time 2022/3/9
  */
 const gitUrl = require('./gitUrl')
 const exec = require('child_process').exec;
@@ -15,7 +15,7 @@ const promiseGetTag = () => {
                 reject();
                 process.exit()
             }
-            const temeplateList = ['NFES_CSR', 'NFES_CSR_With_Antd_Admin', 'NFES_CSR_With_Router', 'NFES_CSR_With_Qiankun', 'NFES_CSR_With_Module_Federation', 'NFES_CSR_With_Module_Federation_Admin', 'NFES_SSR_Hello_NFES', 'NFES_SSR_With_Typescript', 'NFES_SSR_With_ANTD', 'NFES_CSR_Plugin']
+            const temeplateList = ['react_CSR', 'react_CSR_With_Antd_Admin', 'react_CSR_With_Router', 'react_CSR_With_Qiankun', 'react_CSR_With_Module_Federation', 'react_CSR_With_Module_Federation_Admin', 'react_SSR_Hello_react', 'react_SSR_With_Typescript', 'react_SSR_With_ANTD', 'react_CSR_Plugin']
             let tags = stdout.split('\n').map((item) => {
                 const headData = item.split('/');
                 return  headData[headData.length - 1];

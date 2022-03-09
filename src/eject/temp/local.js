@@ -1,4 +1,3 @@
-var serverRun = require('@ctrip/nfes-nmf/server/index')
-
+var serverRun = require('@ctrip/react-cli/server/index')
 
 serverRun(8080, true, true)
