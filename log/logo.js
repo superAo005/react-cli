@@ -17,7 +17,7 @@ const logo = () =>
           return
         }
         ConsoleLog(gradient.pastel.multiline(data) + '\n')
-        ConsoleLog(gradient.atlas('  Welcome to use the react-cli！') + '\n')
+        ConsoleLog(gradient.atlas('  Welcome to use the react-cli!') + '\n')
         resolve(true)
       }
     )
