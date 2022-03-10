@@ -3,10 +3,13 @@
   "version": "1.0.0",
   "description": "一个创建react项目的脚手架模板",
   "main": "index.js",
+  "bin": {
+    "react-cli": "bin/index.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "yzw",
+  "author": "superAo",
   "license": "ISC",
   "dependencies": {
     "chalk": "^4.1.1",

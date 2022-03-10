@@ -5,6 +5,6 @@
  * @Last Modified by superAo
  * @Last Modified Time 2022/3/9
  */
-const gitUrl = 'https://github.com/superAo005/react-cli'
+const gitUrl = 'https://gitee.com/fillter/react-vite'
 
 module.exports = gitUrl
