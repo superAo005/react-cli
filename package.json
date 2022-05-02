@@ -1,5 +1,5 @@
 {
-  "name": "react-cli",
+  "name": "react-vite-cli",
   "version": "1.0.0",
   "description": "一个创建react项目的脚手架模板",
   "main": "index.js",
