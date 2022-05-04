@@ -25,7 +25,7 @@ module.exports = () => {
     //异步在选择完成后执行
     if (yield boolean) {
       //console身体
-      body('  Choose a template that belongs to yourself, then initiate a routine')
+      body('选择一个属于你自己的模板，然后启动一个项目')
       //console底部
       footer()
       //选择自己的模板 ;
