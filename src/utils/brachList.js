@@ -15,7 +15,14 @@ const promiseGetTag = () => {
         reject()
         process.exit()
       }
-      const temeplateList = ['react_h5', 'react_antd', 'react_vite_antd_js', 'react_vite_antd_ts']
+      const temeplateList = [
+        'react_h5',
+        'react_antd',
+        'react_vite_antd_js',
+        'react_vite_antd_ts',
+        'vite-template',
+        'vite-template-mock'
+      ]
       let tags = stdout
         .split('\n')
         .map((item) => {
