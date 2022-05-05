@@ -2,7 +2,7 @@
 
 #### 介绍
 
-一个基于react的开箱即用的中台前端/H5设计解决方案
+一个基于react和vite的开箱即用的中台前端/H5设计解决方案
 
 
 #### 前置环境
@@ -12,7 +12,7 @@
 #### 安装教程
 
 ```bash
-npm i react-cli -g 
+npm i react-vite-cli -g 
 ```
 
 ## use
