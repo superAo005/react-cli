@@ -31,7 +31,6 @@ module.exports = function () {
       body('  react项目转换.')
       footer()
       const srcPath = path.join(cwd, './src')
-
       const mkdirHandle = () => {
         if (!isFileExist(srcPath)) {
           mkdir(srcPath)
@@ -50,7 +49,6 @@ module.exports = function () {
           test: 'react-cli test NODEENV=Test coverage=true',
           dev: 'react-cli start NODE_ENV=development NOOPEN=1',
           build: 'react-cli build NODE_ENV=production',
-          onlinebuild: 'react-cli onlinebuild NODE_ENV=production',
         }
         Object.keys(pData.scripts).map((key) => {
           if (pData.scripts[key]) {
@@ -81,17 +79,6 @@ module.exports = function () {
         reactConfig.useRouter = true
         reactConfig.sass = true
         reactConfig.less = true
-        reactConfig.captainOptions = {
-          appid: '00000000',
-          site: [
-            'webresource.c-ctrip.com',
-            'webresource.english.c-ctrip.com',
-            'ares.i18n',
-            'offline',
-          ][0],
-          resVD: 'demo', //特征码：如业务方相关的ticketxxx,flightxxx等
-          noticeUserID: ['S45066'],
-        }
         writeFile(
           reactConfigPath,
           `module.exports = {
@@ -125,12 +112,11 @@ ${Object.keys(reactConfig)
             obj.head = niceHeaderContent.join('\n')
           }
           const footerContent = documentContext.match(/(?<=<body)((.|\n)*)(?=.<\/body>)/g)
-          console.log('--12321', footerContent)
           if (footerContent && footerContent.length > 0) {
             const niceFooterContent = footerContent[0].split('\n').filter((item) => {
               return item && item.indexOf('<script>') >= 0
             })
-            obj.footer = `<script>console.log('nmf is running ...')</script> \n ${niceFooterContent.join(
+            obj.footer = `<script>console.log('react is running ...')</script> \n ${niceFooterContent.join(
               '\n'
             )}`
           }
@@ -234,7 +220,7 @@ ${Object.keys(reactConfig)
       mkdirHandle()
       // 删除 .next
       deleteNext()
-      // package.json 删除 @ctrip/react, 并且添加nmf
+      // package.json 删除webpack, 并且添加vite
       updatePackage()
       // react.config.js 的vd 删除。main删除 。 buildId删除， redisName 删除。
       // htmlCacheTime 删除 excludeCache 删除，新增 useRouter、sass、less, captainOptions
