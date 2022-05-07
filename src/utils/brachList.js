@@ -16,11 +16,9 @@ const promiseGetTag = () => {
         process.exit()
       }
       const temeplateList = [
-        'react_h5',
-        'react_antd',
-        'react_vite_antd_js',
-        'react_vite_antd_ts',
-        'vite-template',
+        'react-h5',
+        'antd-pro-js',
+        'antd-pro-ts',
         'vite-template-mock'
       ]
       let tags = stdout
