@@ -28,7 +28,7 @@ module.exports = function () {
     let boolean = logo()
     const cwd = process.cwd()
     if (yield boolean) {
-      body('  react项目转换.')
+      body(' webpack项目转换vite.')
       footer()
       const srcPath = path.join(cwd, './src')
       const mkdirHandle = () => {
