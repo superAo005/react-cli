@@ -58,10 +58,10 @@ module.exports = function () {
           }
         })
         Object.keys(pData.dependencies).map((key) => {
-          if (key === '@ctrip/react') {
+          if (key === 'react') {
             delete pData.dependencies[key]
           }
-          pData.dependencies['@ctrip/react-cli'] = '^4.1.27'
+          pData.dependencies['react-cli'] = '^4.1.27'
         })
         writeFile(path.join(cwd, './package.json'), JSON.stringify(pData, null, 4))
         console.log(chalk.green('√ 更新 package.json...'))

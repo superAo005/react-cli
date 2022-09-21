@@ -19,7 +19,8 @@ const promiseGetTag = () => {
         'react-h5',
         'antd-pro-js',
         'antd-pro-ts',
-        'vite-template-mock'
+        'vite-template-mock',
+        'webpack-ts'
       ]
       let tags = stdout
         .split('\n')
