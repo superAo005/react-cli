@@ -3,7 +3,7 @@
  * @Date 2022/3/9
  * @Version 1.0.0
  * @Last Modified by superAo
- * @Last Modified Time 2022/3/9
+ * @Last Modified Time 2022/10/13
  */
 const gitUrl = require('./gitUrl')
 const exec = require('child_process').exec
@@ -12,6 +12,7 @@ const promiseGetTag = () => {
   return new Promise((resolve, reject) => {
     const clone = exec(`git ls-remote --heads ${gitUrl}`, (error, stdout, stderr) => {
       if (error) {
+        console.log(error)
         reject()
         process.exit()
       }
