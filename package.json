@@ -1,7 +1,7 @@
 {
   "name": "react-vite-cli",
   "version": "1.2.0",
-  "description": "一个创建react项目的脚手架模板",
+  "description": "一个基于vite或者webpack创建react项目的脚手架模板",
   "main": "index.js",
   "bin": {
     "react-cli": "bin/index.js"
