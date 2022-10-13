@@ -20,7 +20,7 @@ const promiseGetTag = () => {
         'antd-pro-js',
         'antd-pro-ts',
         'vite-template-mock',
-        'webpack-ts'
+        'webpack-ts',
       ]
       let tags = stdout
         .split('\n')
